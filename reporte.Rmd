@@ -7,30 +7,11 @@ output: html_document
 knitr::opts_chunk$set(echo = FALSE)
 ```
 
-```{r paquetes, include=FALSE}
-
-```
-
-```{r actualizacion}
-
-
-```
-
-
 ### Tweets más retwiteados y con más likes de las últimas 24 horas
 
 Última actualización: `r Sys.time()`
 
 [Reportes Anteriores](https://github.com/esterodr/Reporte_tweets/tree/main/anteriores)
-
-```{r preparacion}
- 
-```
-
-
-```{r tweets_imgs}
-
-```
 
 ```{r, results='asis'}
 files <- list.files(path = "./tempimgs/", pattern = "png", full.names = TRUE)
