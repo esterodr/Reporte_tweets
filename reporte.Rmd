@@ -22,3 +22,8 @@ for (f in files) {
   cat(paste0("&nbsp;"))
   }
 ```
+
+```{r}
+wordcloud2(tweets_words, size=0.2, color=rep_len(redPalette, nrow(tweets_words)))
+```
+
