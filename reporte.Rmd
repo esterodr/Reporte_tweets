@@ -16,10 +16,11 @@ knitr::opts_chunk$set(echo = FALSE)
 ```{r, results='asis'}
 files <- list.files(path = "./tempimgs/", pattern = "png", full.names = TRUE)
 for (f in files) {
+  i <- which(f==files)
   cat(paste0("![image_label](", f, ")\n"))
-  cat(paste0("&nbsp;"))
-  cat(paste0("&nbsp;"))
-  cat(paste0("&nbsp;"))
+  cat(paste0("[Link](",seleccion$status_url[i],")\n"))
+  cat("&nbsp;\n")
+  cat("&nbsp;\n")
   }
 ```
 
